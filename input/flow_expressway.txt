@@ -1,0 +1,10 @@
+# Free-flow Expressway
+# v_f = 120 km/h, k_j = 150 veh/km
+FREE_FLOW        120
+JAM_DENSITY      150
+DENSITY_RANGE    0 150 3
+COMPUTE_SPEED
+COMPUTE_FLOW
+CAPACITY
+EXPORT_CSV       flow_expressway
+PRINT_RESULTS

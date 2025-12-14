@@ -1,0 +1,9 @@
+# Heavy congestion case  (v_f = 60 km/h, k_j = 250 veh/km)
+FREE_FLOW        60
+JAM_DENSITY      250
+DENSITY_RANGE    0 250 10
+COMPUTE_SPEED
+COMPUTE_FLOW
+CAPACITY
+EXPORT_CSV       sample_congested
+PRINT_RESULTS    1

@@ -1,0 +1,10 @@
+# Standard Highway Scenario
+# v_f = 100 km/h, k_j = 200 veh/km
+FREE_FLOW        100
+JAM_DENSITY      200
+DENSITY_RANGE    0 200 5
+COMPUTE_SPEED
+COMPUTE_FLOW
+CAPACITY
+EXPORT_CSV       standard_highway
+PRINT_RESULTS

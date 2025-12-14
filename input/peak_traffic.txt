@@ -1,0 +1,10 @@
+# Peak Hour Traffic
+# v_f = 70 km/h, k_j = 220 veh/km
+FREE_FLOW        70
+JAM_DENSITY      220
+DENSITY_RANGE    0 220 5
+COMPUTE_SPEED
+COMPUTE_FLOW
+CAPACITY
+EXPORT_CSV       peak_traffic
+PRINT_RESULTS
