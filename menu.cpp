@@ -362,12 +362,12 @@ void showPlotForFile(const std::string& csvName) {
     
     std::cout << "\n";
     printLine('-');
-    std::cout << "  Generating plot...\n";
+    std::cout << "  Launching MATLAB Plotter...\n";
+    std::cout << "  Please wait, opening MATLAB...\n";
     printLine('-');
     
-    // Call Python plot script
-    std::string plotCmd = "python quick_plot.py " + csvName;
-    std::cout << "\n  Running: " << plotCmd << "\n\n";
+    // Call MATLAB plot script
+    std::string plotCmd = "matlab -batch \"quick_plot('" + csvName + "')\"";
     
     int result = system(plotCmd.c_str());
     
@@ -375,8 +375,7 @@ void showPlotForFile(const std::string& csvName) {
         std::cout << "\n";
         printLine('-');
         std::cout << "  Plotting issues detected\n";
-        std::cout << "  Ensure Python is installed with:\n";
-        std::cout << "  pip install pandas matplotlib\n";
+        std::cout << "  Ensure MATLAB is installed and the quick_plot.m script is available.\n";
         printLine('-');
     }
 }
